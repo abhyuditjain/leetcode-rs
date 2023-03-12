@@ -1,4 +1,5 @@
 pub mod problem_1_two_sum;
+pub mod problem_23_merge_k_sorted_lists;
 pub mod problem_2_add_two_numbers;
 pub mod problem_3_longest_substring_without_repeating_characters;
 pub mod problem_875_koko_eating_bananas;

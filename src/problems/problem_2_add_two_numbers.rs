@@ -26,17 +26,7 @@
 //!
 //! It is guaranteed that the list represents a number that does not have leading zeros.
 
-#[derive(Debug, PartialEq)]
-pub struct ListNode {
-    val: i32,
-    next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    pub fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
+use crate::utils::listnode::ListNode;
 
 pub fn add_two_numbers(
     l1: Option<Box<ListNode>>,
@@ -75,34 +65,31 @@ pub fn add_two_numbers(
 mod tests {
     use super::*;
 
-    fn to_list(v: &[i32]) -> Option<Box<ListNode>> {
-        let mut front = Box::new(ListNode::new(0));
-        let mut current = &mut front;
-
-        for x in v {
-            current.next = Some(Box::new(ListNode::new(*x)));
-            current = current.next.as_mut().unwrap();
-        }
-
-        front.next
-    }
-
     #[test]
     fn test1() {
         assert_eq!(
-            add_two_numbers(to_list(&[2, 4, 3]), to_list(&[5, 6, 4])),
-            to_list(&[7, 0, 8])
+            add_two_numbers(
+                ListNode::from_arr(&[2, 4, 3]),
+                ListNode::from_arr(&[5, 6, 4])
+            ),
+            ListNode::from_arr(&[7, 0, 8])
         );
     }
     #[test]
     fn test2() {
-        assert_eq!(add_two_numbers(to_list(&[0]), to_list(&[0])), to_list(&[0]));
+        assert_eq!(
+            add_two_numbers(ListNode::from_arr(&[0]), ListNode::from_arr(&[0])),
+            ListNode::from_arr(&[0])
+        );
     }
     #[test]
     fn test3() {
         assert_eq!(
-            add_two_numbers(to_list(&[9, 9, 9, 9, 9, 9, 9]), to_list(&[9, 9, 9, 9])),
-            to_list(&[8, 9, 9, 9, 0, 0, 0, 1])
+            add_two_numbers(
+                ListNode::from_arr(&[9, 9, 9, 9, 9, 9, 9]),
+                ListNode::from_arr(&[9, 9, 9, 9])
+            ),
+            ListNode::from_arr(&[8, 9, 9, 9, 0, 0, 0, 1])
         );
     }
 }
