@@ -4,6 +4,7 @@ pub mod problem_11_container_with_most_water;
 pub mod problem_12_integer_to_roman;
 pub mod problem_13_roman_to_integer;
 pub mod problem_14_longest_common_prefix;
+pub mod problem_15_three_sum;
 pub mod problem_1_two_sum;
 pub mod problem_23_merge_k_sorted_lists;
 pub mod problem_2_add_two_numbers;
