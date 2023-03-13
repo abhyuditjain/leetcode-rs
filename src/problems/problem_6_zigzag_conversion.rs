@@ -83,7 +83,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_longest_palindrome() {
+    fn test_zigzag_convert() {
         assert_eq!(
             zigzag_convert("PAYPALISHIRING", 3),
             "PAHNAPLSIIGYIR".to_owned()

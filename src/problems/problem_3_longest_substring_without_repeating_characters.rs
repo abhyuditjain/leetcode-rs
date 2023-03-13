@@ -53,7 +53,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test3() {
+    fn test_length_of_longest_substring() {
         assert_eq!(length_of_longest_substring("abcabcbb"), 3);
         assert_eq!(length_of_longest_substring("bbbbb"), 1);
         assert_eq!(length_of_longest_substring("pwwkew"), 3);
