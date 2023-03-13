@@ -76,5 +76,6 @@ mod tests {
         assert!(!is_match("aa", "a"));
         assert!(is_match("aa", "a*"));
         assert!(is_match("ab", ".*"));
+        assert!(is_match("ab", "c*a*b"));
     }
 }
