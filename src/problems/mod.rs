@@ -1,4 +1,5 @@
 pub mod problem_101_symmetric_tree;
+pub mod problem_10_regular_expression_matching;
 pub mod problem_1_two_sum;
 pub mod problem_23_merge_k_sorted_lists;
 pub mod problem_2_add_two_numbers;
