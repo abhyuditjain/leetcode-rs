@@ -4,4 +4,5 @@ pub mod problem_2_add_two_numbers;
 pub mod problem_3_longest_substring_without_repeating_characters;
 pub mod problem_4_median_of_two_sorted_arrays;
 pub mod problem_5_longest_palindromic_substring;
+pub mod problem_6_zigzag_conversion;
 pub mod problem_875_koko_eating_bananas;
