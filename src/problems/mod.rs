@@ -9,6 +9,7 @@ pub mod problem_15_three_sum;
 pub mod problem_16_three_sum_closest;
 pub mod problem_17_letter_combinations_of_a_phone_number;
 pub mod problem_18_four_sum;
+pub mod problem_19_remove_nth_node_from_end_of_linked_list;
 pub mod problem_1_two_sum;
 pub mod problem_23_merge_k_sorted_lists;
 pub mod problem_2_add_two_numbers;
