@@ -12,6 +12,7 @@ pub mod problem_18_four_sum;
 pub mod problem_19_remove_nth_node_from_end_of_linked_list;
 pub mod problem_1_two_sum;
 pub mod problem_20_valid_parenthesis;
+pub mod problem_21_merge_two_sorted_lists;
 pub mod problem_23_merge_k_sorted_lists;
 pub mod problem_2_add_two_numbers;
 pub mod problem_3_longest_substring_without_repeating_characters;
