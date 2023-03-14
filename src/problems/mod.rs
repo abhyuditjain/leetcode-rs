@@ -1,6 +1,7 @@
 pub mod problem_101_symmetric_tree;
 pub mod problem_10_regular_expression_matching;
 pub mod problem_11_container_with_most_water;
+pub mod problem_129_sum_root_to_leaf_numbers;
 pub mod problem_12_integer_to_roman;
 pub mod problem_13_roman_to_integer;
 pub mod problem_14_longest_common_prefix;

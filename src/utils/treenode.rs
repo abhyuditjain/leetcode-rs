@@ -20,6 +20,9 @@ impl TreeNode {
 
 impl TreeNode {
     pub fn build_tree(values: &[Option<i32>]) -> Option<Rc<RefCell<TreeNode>>> {
+        if values.is_empty() {
+            return None;
+        }
         let nodes = values
             .iter()
             .map(|x| {
@@ -39,8 +42,12 @@ impl TreeNode {
             let m = fast;
             while slow < m {
                 if let Some(node_rc) = &nodes[slow] {
-                    node_rc.borrow_mut().left = nodes[fast].clone();
-                    node_rc.borrow_mut().right = nodes[fast + 1].clone();
+                    if fast < values.len() {
+                        node_rc.borrow_mut().left = nodes[fast].clone();
+                    }
+                    if fast + 1 < values.len() {
+                        node_rc.borrow_mut().right = nodes[fast + 1].clone();
+                    }
                     fast += 2;
                 }
                 slow += 1;
