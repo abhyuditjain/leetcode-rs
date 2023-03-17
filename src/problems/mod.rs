@@ -19,6 +19,7 @@ pub mod problem_23_merge_k_sorted_lists;
 pub mod problem_24_swap_nodes_in_pairs;
 pub mod problem_25_reverse_nodes_in_k_group;
 pub mod problem_26_remove_duplicates_from_sorted_array;
+pub mod problem_27_remove_element;
 pub mod problem_2_add_two_numbers;
 pub mod problem_3_longest_substring_without_repeating_characters;
 pub mod problem_4_median_of_two_sorted_arrays;
