@@ -21,6 +21,7 @@ pub mod problem_25_reverse_nodes_in_k_group;
 pub mod problem_26_remove_duplicates_from_sorted_array;
 pub mod problem_27_remove_element;
 pub mod problem_28_find_the_index_of_the_first_occurrence_in_a_string;
+pub mod problem_29_divide_two_integers;
 pub mod problem_2_add_two_numbers;
 pub mod problem_3_longest_substring_without_repeating_characters;
 pub mod problem_4_median_of_two_sorted_arrays;
