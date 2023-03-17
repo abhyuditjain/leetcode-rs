@@ -25,6 +25,7 @@ pub mod problem_29_divide_two_integers;
 pub mod problem_2_add_two_numbers;
 pub mod problem_30_substring_with_concatenation_of_all_words;
 pub mod problem_31_next_permutation;
+pub mod problem_32_longest_valid_parentheses;
 pub mod problem_3_longest_substring_without_repeating_characters;
 pub mod problem_4_median_of_two_sorted_arrays;
 pub mod problem_5_longest_palindromic_substring;
