@@ -30,6 +30,7 @@ pub mod problem_33_search_in_rotated_sorted_array;
 pub mod problem_34_find_first_and_last_position_of_element_in_sorted_array;
 pub mod problem_35_search_insert_position;
 pub mod problem_36_valid_sudoku;
+pub mod problem_37_sudoku_solver;
 pub mod problem_3_longest_substring_without_repeating_characters;
 pub mod problem_4_median_of_two_sorted_arrays;
 pub mod problem_5_longest_palindromic_substring;
