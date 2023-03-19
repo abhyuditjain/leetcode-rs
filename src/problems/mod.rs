@@ -36,6 +36,7 @@ pub mod problem_39_combination_sum;
 pub mod problem_3_longest_substring_without_repeating_characters;
 pub mod problem_40_combination_sum_ii;
 pub mod problem_41_first_missing_positive;
+pub mod problem_42_trapping_rain_water;
 pub mod problem_4_median_of_two_sorted_arrays;
 pub mod problem_5_longest_palindromic_substring;
 pub mod problem_6_zigzag_conversion;
