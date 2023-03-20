@@ -39,6 +39,7 @@ pub mod problem_41_first_missing_positive;
 pub mod problem_42_trapping_rain_water;
 pub mod problem_43_multiply_strings;
 pub mod problem_44_wildcard_matching;
+pub mod problem_45_jump_game_ii;
 pub mod problem_4_median_of_two_sorted_arrays;
 pub mod problem_5_longest_palindromic_substring;
 pub mod problem_6_zigzag_conversion;
