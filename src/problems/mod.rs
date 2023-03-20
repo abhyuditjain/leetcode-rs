@@ -43,6 +43,7 @@ pub mod problem_45_jump_game_ii;
 pub mod problem_46_permutations;
 pub mod problem_47_permutations_ii;
 pub mod problem_48_rotate_image;
+pub mod problem_49_group_anagrams;
 pub mod problem_4_median_of_two_sorted_arrays;
 pub mod problem_5_longest_palindromic_substring;
 pub mod problem_6_zigzag_conversion;
