@@ -48,6 +48,7 @@ pub mod problem_4_median_of_two_sorted_arrays;
 pub mod problem_50_pow_x_n;
 pub mod problem_51_n_queens;
 pub mod problem_52_n_queens_ii;
+pub mod problem_53_maximum_subarray;
 pub mod problem_5_longest_palindromic_substring;
 pub mod problem_6_zigzag_conversion;
 pub mod problem_7_reverse_integer;
