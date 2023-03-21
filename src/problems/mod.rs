@@ -58,6 +58,7 @@ pub mod problem_59_spiral_matrix_ii;
 pub mod problem_5_longest_palindromic_substring;
 pub mod problem_60_permutation_sequence;
 pub mod problem_61_rotate_list;
+pub mod problem_62_unique_paths;
 pub mod problem_6_zigzag_conversion;
 pub mod problem_7_reverse_integer;
 pub mod problem_875_koko_eating_bananas;
