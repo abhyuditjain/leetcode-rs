@@ -51,6 +51,7 @@ pub mod problem_52_n_queens_ii;
 pub mod problem_53_maximum_subarray;
 pub mod problem_54_spiral_matrix;
 pub mod problem_55_jump_game;
+pub mod problem_56_merge_intervals;
 pub mod problem_5_longest_palindromic_substring;
 pub mod problem_6_zigzag_conversion;
 pub mod problem_7_reverse_integer;
