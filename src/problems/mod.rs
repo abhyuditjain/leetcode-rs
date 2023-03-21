@@ -54,6 +54,7 @@ pub mod problem_55_jump_game;
 pub mod problem_56_merge_intervals;
 pub mod problem_57_insert_interval;
 pub mod problem_58_length_of_last_word;
+pub mod problem_59_spiral_matrix_ii;
 pub mod problem_5_longest_palindromic_substring;
 pub mod problem_6_zigzag_conversion;
 pub mod problem_7_reverse_integer;
