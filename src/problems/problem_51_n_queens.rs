@@ -22,7 +22,7 @@
 use std::collections::HashSet;
 
 #[derive(Default)]
-struct Board {
+pub struct Board {
     n: usize,
     board: Vec<Vec<bool>>,
     row_queens: HashSet<usize>,
@@ -32,9 +32,7 @@ struct Board {
 
 pub fn n_queens(n: usize) -> Vec<Vec<String>> {
     let mut board = Board::new(n);
-    let mut solved_boards = vec![];
-    board.n_queens(0, &mut solved_boards);
-    solved_boards
+    board.n_queens()
 }
 
 impl Board {
@@ -46,7 +44,13 @@ impl Board {
         }
     }
 
-    pub fn n_queens(&mut self, col: usize, solved_boards: &mut Vec<Vec<String>>) {
+    pub fn n_queens(&mut self) -> Vec<Vec<String>> {
+        let mut solved_boards = vec![];
+        self.n_queens_backtrack(0, &mut solved_boards);
+        solved_boards
+    }
+
+    pub fn n_queens_backtrack(&mut self, col: usize, solved_boards: &mut Vec<Vec<String>>) {
         if col == self.n {
             solved_boards.push(self.get_board());
             return;
@@ -55,7 +59,7 @@ impl Board {
         for row in 0..self.n {
             if self.is_move_valid(row, col) {
                 self.place_queen(row, col);
-                self.n_queens(col + 1, solved_boards);
+                self.n_queens_backtrack(col + 1, solved_boards);
                 self.remove_queen(row, col);
             }
         }
