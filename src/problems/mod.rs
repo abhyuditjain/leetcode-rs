@@ -69,6 +69,7 @@ pub mod problem_68_text_justification;
 pub mod problem_69_sqrt_x;
 pub mod problem_6_zigzag_conversion;
 pub mod problem_70_climbing_stairs;
+pub mod problem_71_simplify_path;
 pub mod problem_7_reverse_integer;
 pub mod problem_875_koko_eating_bananas;
 pub mod problem_8_string_to_integer_atoi;
