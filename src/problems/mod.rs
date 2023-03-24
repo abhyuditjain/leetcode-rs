@@ -74,6 +74,7 @@ pub mod problem_72_edit_distance;
 pub mod problem_73_set_matrix_zeroes;
 pub mod problem_74_search_a_2d_matrix;
 pub mod problem_75_sort_colours;
+pub mod problem_76_minimum_window_substring;
 pub mod problem_7_reverse_integer;
 pub mod problem_875_koko_eating_bananas;
 pub mod problem_8_string_to_integer_atoi;
