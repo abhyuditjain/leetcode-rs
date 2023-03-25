@@ -31,7 +31,7 @@
 //!
 //! Follow up: Could you find an algorithm that runs in O(m + n) time?
 
-#[derive(Default)]
+#[derive(Default, PartialEq, Eq)]
 pub struct AlphabetCount([usize; 26], [usize; 26]); // lower and upper case
 
 impl AlphabetCount {

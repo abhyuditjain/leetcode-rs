@@ -87,5 +87,6 @@ pub mod problem_84_largest_rectangle_in_histogram;
 pub mod problem_85_maximal_rectangle;
 pub mod problem_86_partition_list;
 pub mod problem_875_koko_eating_bananas;
+pub mod problem_87_scramble_string;
 pub mod problem_8_string_to_integer_atoi;
 pub mod problem_9_palindrome_number;
