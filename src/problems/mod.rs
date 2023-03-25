@@ -82,6 +82,7 @@ pub mod problem_7_reverse_integer;
 pub mod problem_80_remove_duplicates_from_sorted_array_ii;
 pub mod problem_81_search_in_rotated_sorted_array_ii;
 pub mod problem_82_remove_duplicates_from_sorted_list_ii;
+pub mod problem_83_remove_duplicates_from_sorted_list;
 pub mod problem_875_koko_eating_bananas;
 pub mod problem_8_string_to_integer_atoi;
 pub mod problem_9_palindrome_number;
