@@ -94,4 +94,5 @@ pub mod problem_8_string_to_integer_atoi;
 pub mod problem_90_subsets_ii;
 pub mod problem_91_decode_ways;
 pub mod problem_92_reverse_linked_list_ii;
+pub mod problem_93_restore_ip_addresses;
 pub mod problem_9_palindrome_number;
