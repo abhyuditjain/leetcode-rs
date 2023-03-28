@@ -44,7 +44,7 @@ mod tests {
 
     #[test]
     fn test_is_symmetric_true() {
-        let tree = TreeNode::build_tree(&[
+        let tree = TreeNode::from_arr(&[
             Some(1),
             Some(2),
             Some(2),
@@ -59,7 +59,7 @@ mod tests {
 
     #[test]
     fn test_is_symmetric_false() {
-        let tree = TreeNode::build_tree(&[Some(1), Some(2), Some(2), None, Some(3), None, Some(3)]);
+        let tree = TreeNode::from_arr(&[Some(1), Some(2), Some(2), None, Some(3), None, Some(3)]);
 
         assert!(!is_symmetric(tree));
     }

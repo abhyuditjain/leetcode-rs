@@ -49,19 +49,19 @@ mod tests {
 
     #[test]
     fn test_inorder_traversal_1() {
-        let root = TreeNode::build_tree(&[Some(1), None, Some(2), Some(3)]);
+        let root = TreeNode::from_arr(&[Some(1), None, Some(2), Some(3)]);
         assert_eq!(inorder_traversal(root), vec![1, 3, 2]);
     }
 
     #[test]
     fn test_inorder_traversal_2() {
-        let root = TreeNode::build_tree(&[]);
+        let root = TreeNode::from_arr(&[]);
         assert_eq!(inorder_traversal(root), vec![]);
     }
 
     #[test]
     fn test_inorder_traversal_3() {
-        let root = TreeNode::build_tree(&[Some(1)]);
+        let root = TreeNode::from_arr(&[Some(1)]);
         assert_eq!(inorder_traversal(root), vec![1]);
     }
 }

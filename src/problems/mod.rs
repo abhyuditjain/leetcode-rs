@@ -96,4 +96,5 @@ pub mod problem_91_decode_ways;
 pub mod problem_92_reverse_linked_list_ii;
 pub mod problem_93_restore_ip_addresses;
 pub mod problem_94_binary_tree_inorder_traversal;
+pub mod problem_95_unique_binary_search_trees_ii;
 pub mod problem_9_palindrome_number;

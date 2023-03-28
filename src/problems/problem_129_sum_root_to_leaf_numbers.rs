@@ -66,21 +66,21 @@ mod tests {
 
     #[test]
     fn test_sum_numbers_1() {
-        let tree = TreeNode::build_tree(&[Some(1), Some(2), Some(3)]);
+        let tree = TreeNode::from_arr(&[Some(1), Some(2), Some(3)]);
 
         assert_eq!(sum_numbers(tree), 25);
     }
 
     #[test]
     fn test_sum_numbers_2() {
-        let tree = TreeNode::build_tree(&[Some(4), Some(9), Some(0), Some(5), Some(1)]);
+        let tree = TreeNode::from_arr(&[Some(4), Some(9), Some(0), Some(5), Some(1)]);
 
         assert_eq!(sum_numbers(tree), 1026);
     }
 
     #[test]
     fn test_sum_numbers_3() {
-        let tree = TreeNode::build_tree(&[]);
+        let tree = TreeNode::from_arr(&[]);
 
         assert_eq!(sum_numbers(tree), 0);
     }
