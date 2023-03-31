@@ -9,6 +9,7 @@ pub mod problem_1444_number_of_ways_of_cutting_a_pizza;
 pub mod problem_14_longest_common_prefix;
 pub mod problem_15_three_sum;
 pub mod problem_16_three_sum_closest;
+pub mod problem_1704_determine_if_string_halves_are_alike;
 pub mod problem_17_letter_combinations_of_a_phone_number;
 pub mod problem_18_four_sum;
 pub mod problem_19_remove_nth_node_from_end_of_linked_list;
