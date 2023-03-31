@@ -5,6 +5,7 @@ pub mod problem_129_sum_root_to_leaf_numbers;
 pub mod problem_12_integer_to_roman;
 pub mod problem_13_roman_to_integer;
 pub mod problem_1402_reducing_dishes;
+pub mod problem_1444_number_of_ways_of_cutting_a_pizza;
 pub mod problem_14_longest_common_prefix;
 pub mod problem_15_three_sum;
 pub mod problem_16_three_sum_closest;
