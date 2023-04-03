@@ -31,48 +31,30 @@
 //! word and prefix consist only of lowercase English letters.
 //! At most 3 * 104 calls in total will be made to insert, search, and startsWith.
 
+use crate::utils::trie::Trie as GenericTrie;
+
 #[derive(Debug, Default)]
 pub struct Trie {
-    children: [Option<Box<Trie>>; 26],
-    is_word_end: bool,
+    trie: GenericTrie<char>,
 }
 
 impl Trie {
     pub fn new() -> Self {
-        Default::default()
+        Self {
+            trie: GenericTrie::new(),
+        }
     }
 
     pub fn insert(&mut self, word: &str) {
-        let mut curr = self;
-        for c in word.chars().map(|c| c as usize - 'a' as usize) {
-            curr = curr.children[c].get_or_insert_with(|| Box::new(Trie::new()));
-        }
-
-        curr.is_word_end = true;
+        self.trie.insert(word.chars());
     }
 
     pub fn search(&self, word: &str) -> bool {
-        let mut curr = self;
-        for c in word.chars().map(|c| c as usize - 'a' as usize) {
-            match curr.children[c].as_ref() {
-                Some(child) => curr = child,
-                None => return false,
-            }
-        }
-
-        curr.is_word_end
+        self.trie.contains(word.chars())
     }
 
     pub fn starts_with(&self, prefix: &str) -> bool {
-        let mut curr = self;
-        for c in prefix.chars().map(|c| c as usize - 'a' as usize) {
-            match curr.children[c].as_ref() {
-                Some(child) => curr = child,
-                None => return false,
-            }
-        }
-
-        true
+        self.trie.contains_prefix(prefix.chars())
     }
 }
 
