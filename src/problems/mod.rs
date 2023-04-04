@@ -3,6 +3,7 @@ pub mod problem_101_symmetric_tree;
 pub mod problem_102_binary_tree_level_order_traversal;
 pub mod problem_103_binary_tree_zigzag_level_order_traversal;
 pub mod problem_104_maximum_depth_binary_tree;
+pub mod problem_105_construct_binary_tree_from_preorder_and_inorder_traversal;
 pub mod problem_10_regular_expression_matching;
 pub mod problem_11_container_with_most_water;
 pub mod problem_129_sum_root_to_leaf_numbers;
