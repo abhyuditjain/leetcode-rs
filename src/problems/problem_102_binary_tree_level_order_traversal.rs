@@ -24,7 +24,21 @@ use std::{cell::RefCell, collections::VecDeque, rc::Rc};
 
 use crate::utils::treenode::TreeNode;
 
-pub fn level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
+type Node = Option<Rc<RefCell<TreeNode>>>;
+
+pub enum Algorithm {
+    Dfs,
+    Bfs,
+}
+
+pub fn level_order(root: Node, alg: Algorithm) -> Vec<Vec<i32>> {
+    match alg {
+        Algorithm::Bfs => level_order_bfs(root),
+        Algorithm::Dfs => level_order_dfs(root),
+    }
+}
+
+fn level_order_bfs(root: Node) -> Vec<Vec<i32>> {
     let mut queue = VecDeque::new();
 
     if let Some(node) = root {
@@ -56,25 +70,81 @@ pub fn level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
     levels
 }
 
+fn level_order_dfs(root: Node) -> Vec<Vec<i32>> {
+    let mut levels = vec![];
+
+    if let Some(root) = root {
+        level_order_dfs_helper(root, 0, &mut levels);
+    }
+
+    levels
+}
+
+fn level_order_dfs_helper(node: Rc<RefCell<TreeNode>>, level: usize, levels: &mut Vec<Vec<i32>>) {
+    if levels.len() == level {
+        levels.push(vec![]);
+    }
+
+    levels.get_mut(level).unwrap().push(node.borrow().val);
+
+    if let Some(left) = node.borrow().left.clone() {
+        level_order_dfs_helper(left, level + 1, levels);
+    }
+
+    if let Some(right) = node.borrow().right.clone() {
+        level_order_dfs_helper(right, level + 1, levels);
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_level_order_1() {
+    fn test_level_order_bfs_1() {
         let root = TreeNode::from_arr(&[Some(3), Some(9), Some(20), None, None, Some(15), Some(7)]);
-        assert_eq!(level_order(root), vec![vec![3], vec![9, 20], vec![15, 7]]);
+        assert_eq!(
+            level_order_bfs(root),
+            vec![vec![3], vec![9, 20], vec![15, 7]]
+        );
     }
 
     #[test]
-    fn test_level_order_2() {
+    fn test_level_order_bfs_2() {
         let root = TreeNode::from_arr(&[Some(1)]);
-        assert_eq!(level_order(root), vec![vec![1]]);
+        assert_eq!(level_order_bfs(root), vec![vec![1]]);
     }
 
     #[test]
-    fn test_level_order_3() {
+    fn test_level_order_bfs_3() {
         let root = TreeNode::from_arr(&[]);
-        assert_eq!(level_order(root), vec![vec![]; 0]);
+        assert_eq!(level_order_bfs(root), vec![vec![]; 0]);
+    }
+
+    #[test]
+    fn test_level_order_dfs_1() {
+        let root = TreeNode::from_arr(&[Some(3), Some(9), Some(20), None, None, Some(15), Some(7)]);
+        assert_eq!(
+            level_order_dfs(root),
+            vec![vec![3], vec![9, 20], vec![15, 7]]
+        );
+    }
+
+    #[test]
+    fn test_level_order_dfs_2() {
+        let root = TreeNode::from_arr(&[Some(1)]);
+        assert_eq!(level_order_dfs(root), vec![vec![1]]);
+    }
+
+    #[test]
+    fn test_level_order_dfs_3() {
+        let root = TreeNode::from_arr(&[]);
+        assert_eq!(level_order_dfs(root), vec![vec![]; 0]);
+    }
+
+    #[test]
+    fn test_level_order_dfs_4() {
+        let root = TreeNode::from_arr(&[Some(1), Some(2), Some(3), Some(4), Some(5)]);
+        assert_eq!(level_order_dfs(root), vec![vec![1], vec![2, 3], vec![4, 5]]);
     }
 }

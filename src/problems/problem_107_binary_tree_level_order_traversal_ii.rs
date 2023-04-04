@@ -20,39 +20,14 @@
 //! The number of nodes in the tree is in the range [0, 2000].
 //! -1000 <= Node.val <= 1000
 
-use std::{cell::RefCell, collections::VecDeque, rc::Rc};
+use std::{cell::RefCell, rc::Rc};
 
 use crate::utils::treenode::TreeNode;
 
-pub fn level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
-    let mut queue = VecDeque::new();
+use super::problem_102_binary_tree_level_order_traversal::{level_order, Algorithm};
 
-    if let Some(node) = root {
-        queue.push_back(node);
-    }
-
-    let mut levels = vec![];
-
-    while !queue.is_empty() {
-        let mut level = vec![];
-
-        for _ in 0..queue.len() {
-            if let Some(node) = queue.pop_front() {
-                level.push(node.borrow().val);
-
-                if let Some(left) = node.borrow_mut().left.take() {
-                    queue.push_back(left);
-                }
-
-                if let Some(right) = node.borrow_mut().right.take() {
-                    queue.push_back(right);
-                }
-            }
-        }
-
-        levels.push(level)
-    }
-
+pub fn level_order_bottom(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
+    let levels = level_order(root, Algorithm::Bfs);
     levels.into_iter().rev().collect()
 }
 
@@ -61,20 +36,23 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_level_order_1() {
+    fn test_level_order_bottom_1() {
         let root = TreeNode::from_arr(&[Some(3), Some(9), Some(20), None, None, Some(15), Some(7)]);
-        assert_eq!(level_order(root), vec![vec![15, 7], vec![9, 20], vec![3]]);
+        assert_eq!(
+            level_order_bottom(root),
+            vec![vec![15, 7], vec![9, 20], vec![3]]
+        );
     }
 
     #[test]
-    fn test_level_order_2() {
+    fn test_level_order_bottom_2() {
         let root = TreeNode::from_arr(&[Some(1)]);
-        assert_eq!(level_order(root), vec![vec![1]]);
+        assert_eq!(level_order_bottom(root), vec![vec![1]]);
     }
 
     #[test]
-    fn test_level_order_3() {
+    fn test_level_order_bottom_3() {
         let root = TreeNode::from_arr(&[]);
-        assert_eq!(level_order(root), vec![vec![]; 0]);
+        assert_eq!(level_order_bottom(root), vec![vec![]; 0]);
     }
 }
