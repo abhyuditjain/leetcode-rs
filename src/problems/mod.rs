@@ -9,6 +9,7 @@ pub mod problem_107_binary_tree_level_order_traversal_ii;
 pub mod problem_108_convert_sorted_array_to_binary_search_tree;
 pub mod problem_109_convert_sorted_list_to_binary_search_tree;
 pub mod problem_10_regular_expression_matching;
+pub mod problem_110_balanced_binary_tree;
 pub mod problem_11_container_with_most_water;
 pub mod problem_129_sum_root_to_leaf_numbers;
 pub mod problem_12_integer_to_roman;
