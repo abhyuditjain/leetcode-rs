@@ -13,6 +13,7 @@ pub mod problem_110_balanced_binary_tree;
 pub mod problem_111_minimum_depth_of_binary_tree;
 pub mod problem_112_path_sum;
 pub mod problem_113_path_sum_ii;
+pub mod problem_114_flatten_binary_tree_to_linked_list;
 pub mod problem_11_container_with_most_water;
 pub mod problem_129_sum_root_to_leaf_numbers;
 pub mod problem_12_integer_to_roman;
