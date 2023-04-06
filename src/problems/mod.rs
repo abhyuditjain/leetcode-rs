@@ -16,6 +16,7 @@ pub mod problem_113_path_sum_ii;
 pub mod problem_114_flatten_binary_tree_to_linked_list;
 pub mod problem_115_distinct_subsequences;
 pub mod problem_118_pascals_triangle;
+pub mod problem_119_pascals_triangle_ii;
 pub mod problem_11_container_with_most_water;
 pub mod problem_1254_number_of_closed_islands;
 pub mod problem_129_sum_root_to_leaf_numbers;
