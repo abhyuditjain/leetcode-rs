@@ -37,6 +37,7 @@ pub mod problem_1_two_sum;
 pub mod problem_207_course_schedule;
 pub mod problem_208_implement_trie;
 pub mod problem_20_valid_parenthesis;
+pub mod problem_210_course_schedule_ii;
 pub mod problem_21_merge_two_sorted_lists;
 pub mod problem_22_generate_parentheses;
 pub mod problem_23_merge_k_sorted_lists;
