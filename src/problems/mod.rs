@@ -1,5 +1,6 @@
 pub mod problem_100_same_tree;
 pub mod problem_101_symmetric_tree;
+pub mod problem_1020_number_of_enclaves;
 pub mod problem_102_binary_tree_level_order_traversal;
 pub mod problem_103_binary_tree_zigzag_level_order_traversal;
 pub mod problem_104_maximum_depth_binary_tree;
