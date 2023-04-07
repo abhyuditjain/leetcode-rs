@@ -34,6 +34,7 @@ pub mod problem_17_letter_combinations_of_a_phone_number;
 pub mod problem_18_four_sum;
 pub mod problem_19_remove_nth_node_from_end_of_linked_list;
 pub mod problem_1_two_sum;
+pub mod problem_207_course_schedule;
 pub mod problem_208_implement_trie;
 pub mod problem_20_valid_parenthesis;
 pub mod problem_21_merge_two_sorted_lists;
