@@ -45,6 +45,7 @@ pub mod problem_2405_optimal_partition_of_string;
 pub mod problem_2492_minimum_score_of_a_path_between_two_cities;
 pub mod problem_24_swap_nodes_in_pairs;
 pub mod problem_25_reverse_nodes_in_k_group;
+pub mod problem_261_graph_valid_tree;
 pub mod problem_26_remove_duplicates_from_sorted_array;
 pub mod problem_27_remove_element;
 pub mod problem_28_find_the_index_of_the_first_occurrence_in_a_string;
