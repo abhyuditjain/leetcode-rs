@@ -53,6 +53,7 @@ pub mod problem_28_find_the_index_of_the_first_occurrence_in_a_string;
 pub mod problem_29_divide_two_integers;
 pub mod problem_2_add_two_numbers;
 pub mod problem_30_substring_with_concatenation_of_all_words;
+pub mod problem_310_minimum_height_trees;
 pub mod problem_31_next_permutation;
 pub mod problem_32_longest_valid_parentheses;
 pub mod problem_33_search_in_rotated_sorted_array;
