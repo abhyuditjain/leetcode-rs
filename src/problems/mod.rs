@@ -55,6 +55,7 @@ pub mod problem_2_add_two_numbers;
 pub mod problem_30_substring_with_concatenation_of_all_words;
 pub mod problem_310_minimum_height_trees;
 pub mod problem_31_next_permutation;
+pub mod problem_323_number_of_connected_components_in_an_undirected_graph;
 pub mod problem_32_longest_valid_parentheses;
 pub mod problem_33_search_in_rotated_sorted_array;
 pub mod problem_34_find_first_and_last_position_of_element_in_sorted_array;
