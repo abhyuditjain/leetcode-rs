@@ -78,6 +78,7 @@ pub mod problem_48_rotate_image;
 pub mod problem_490_the_maze;
 pub mod problem_49_group_anagrams;
 pub mod problem_4_median_of_two_sorted_arrays;
+pub mod problem_505_the_maze_ii;
 pub mod problem_50_pow_x_n;
 pub mod problem_51_n_queens;
 pub mod problem_52_n_queens_ii;
