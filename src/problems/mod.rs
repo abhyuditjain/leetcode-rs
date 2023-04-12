@@ -76,6 +76,7 @@ pub mod problem_46_permutations;
 pub mod problem_47_permutations_ii;
 pub mod problem_48_rotate_image;
 pub mod problem_490_the_maze;
+pub mod problem_499_the_maze_iii;
 pub mod problem_49_group_anagrams;
 pub mod problem_4_median_of_two_sorted_arrays;
 pub mod problem_505_the_maze_ii;
