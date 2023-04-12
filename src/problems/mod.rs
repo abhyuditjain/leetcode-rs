@@ -100,6 +100,7 @@ pub mod problem_65_valid_number;
 pub mod problem_66_plus_one;
 pub mod problem_676_implement_magic_dictionary;
 pub mod problem_67_add_binary;
+pub mod problem_684_redundant_connection;
 pub mod problem_68_text_justification;
 pub mod problem_69_sqrt_x;
 pub mod problem_6_zigzag_conversion;
