@@ -82,6 +82,7 @@ pub mod problem_49_group_anagrams;
 pub mod problem_4_median_of_two_sorted_arrays;
 pub mod problem_505_the_maze_ii;
 pub mod problem_50_pow_x_n;
+pub mod problem_516_longest_palindromic_subsequence;
 pub mod problem_51_n_queens;
 pub mod problem_52_n_queens_ii;
 pub mod problem_53_maximum_subarray;
