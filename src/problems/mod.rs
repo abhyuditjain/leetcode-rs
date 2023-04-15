@@ -124,6 +124,7 @@ pub mod problem_81_search_in_rotated_sorted_array_ii;
 pub mod problem_82_remove_duplicates_from_sorted_list_ii;
 pub mod problem_83_remove_duplicates_from_sorted_list;
 pub mod problem_84_largest_rectangle_in_histogram;
+pub mod problem_856_score_of_parentheses;
 pub mod problem_85_maximal_rectangle;
 pub mod problem_86_partition_list;
 pub mod problem_875_koko_eating_bananas;
