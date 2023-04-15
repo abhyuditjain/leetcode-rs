@@ -41,6 +41,7 @@ pub mod problem_208_implement_trie;
 pub mod problem_20_valid_parenthesis;
 pub mod problem_210_course_schedule_ii;
 pub mod problem_21_merge_two_sorted_lists;
+pub mod problem_2218_maximum_value_of_k_coins_from_piles;
 pub mod problem_22_generate_parentheses;
 pub mod problem_23_merge_k_sorted_lists;
 pub mod problem_2405_optimal_partition_of_string;
