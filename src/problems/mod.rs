@@ -141,6 +141,7 @@ pub mod problem_94_binary_tree_inorder_traversal;
 pub mod problem_95_unique_binary_search_trees_ii;
 pub mod problem_96_unique_binary_search_trees;
 pub mod problem_97_interleaving_strings;
+pub mod problem_985_sum_of_even_numbers_after_queries;
 pub mod problem_986_validate_stack_sequences;
 pub mod problem_98_validate_binary_search_tree;
 pub mod problem_99_recover_binary_search_tree;
