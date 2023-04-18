@@ -34,6 +34,7 @@ pub mod problem_1639_number_of_ways_to_form_a_target_string_given_a_dictionary;
 pub mod problem_1695_maximum_erasure_value;
 pub mod problem_16_three_sum_closest;
 pub mod problem_1704_determine_if_string_halves_are_alike;
+pub mod problem_1768_merge_strings_alternately;
 pub mod problem_17_letter_combinations_of_a_phone_number;
 pub mod problem_18_four_sum;
 pub mod problem_19_remove_nth_node_from_end_of_linked_list;
