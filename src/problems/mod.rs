@@ -95,6 +95,7 @@ pub mod problem_54_spiral_matrix;
 pub mod problem_55_jump_game;
 pub mod problem_56_merge_intervals;
 pub mod problem_57_insert_interval;
+pub mod problem_588_design_in_memory_file_system;
 pub mod problem_58_length_of_last_word;
 pub mod problem_59_spiral_matrix_ii;
 pub mod problem_5_longest_palindromic_substring;
