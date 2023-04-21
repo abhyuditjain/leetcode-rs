@@ -135,6 +135,7 @@ pub mod problem_86_partition_list;
 pub mod problem_875_koko_eating_bananas;
 pub mod problem_87_scramble_string;
 pub mod problem_88_merged_sorted_array;
+pub mod problem_897_profitable_schemes;
 pub mod problem_89_gray_code;
 pub mod problem_8_string_to_integer_atoi;
 pub mod problem_90_subsets_ii;
