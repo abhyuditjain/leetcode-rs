@@ -3,6 +3,7 @@ pub mod problem_101_symmetric_tree;
 pub mod problem_1020_number_of_enclaves;
 pub mod problem_102_binary_tree_level_order_traversal;
 pub mod problem_103_binary_tree_zigzag_level_order_traversal;
+pub mod problem_1049_last_stone_weight_ii;
 pub mod problem_104_maximum_depth_binary_tree;
 pub mod problem_105_construct_binary_tree_from_preorder_and_inorder_traversal;
 pub mod problem_106_construct_binary_tree_from_inorder_and_postorder_traversal;
