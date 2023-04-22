@@ -25,6 +25,7 @@ pub mod problem_1235_maximum_profit_in_job_scheduling;
 pub mod problem_1254_number_of_closed_islands;
 pub mod problem_129_sum_root_to_leaf_numbers;
 pub mod problem_12_integer_to_roman;
+pub mod problem_1312_minimum_insertion_steps_to_make_a_string_palindrome;
 pub mod problem_1319_number_of_operations_to_make_network_connected;
 pub mod problem_13_roman_to_integer;
 pub mod problem_1402_reducing_dishes;
