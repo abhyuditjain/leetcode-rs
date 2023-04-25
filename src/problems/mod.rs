@@ -33,6 +33,7 @@ pub mod problem_1444_number_of_ways_of_cutting_a_pizza;
 pub mod problem_14_longest_common_prefix;
 pub mod problem_15_three_sum;
 pub mod problem_1639_number_of_ways_to_form_a_target_string_given_a_dictionary;
+pub mod problem_1675_minimize_deviation_in_array;
 pub mod problem_1695_maximum_erasure_value;
 pub mod problem_16_three_sum_closest;
 pub mod problem_1704_determine_if_string_halves_are_alike;
