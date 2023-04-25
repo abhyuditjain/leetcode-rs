@@ -48,6 +48,7 @@ pub mod problem_210_course_schedule_ii;
 pub mod problem_21_merge_two_sorted_lists;
 pub mod problem_2218_maximum_value_of_k_coins_from_piles;
 pub mod problem_22_generate_parentheses;
+pub mod problem_2336_smallest_number_in_infinite_set;
 pub mod problem_2353_design_a_food_rating_system;
 pub mod problem_23_merge_k_sorted_lists;
 pub mod problem_2405_optimal_partition_of_string;
