@@ -53,6 +53,7 @@ pub mod problem_2336_smallest_number_in_infinite_set;
 pub mod problem_2353_design_a_food_rating_system;
 pub mod problem_23_merge_k_sorted_lists;
 pub mod problem_2405_optimal_partition_of_string;
+pub mod problem_246_strobogrammatic_number;
 pub mod problem_2492_minimum_score_of_a_path_between_two_cities;
 pub mod problem_24_swap_nodes_in_pairs;
 pub mod problem_25_reverse_nodes_in_k_group;
