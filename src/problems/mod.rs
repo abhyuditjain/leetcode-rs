@@ -40,6 +40,7 @@ pub mod problem_16_three_sum_closest;
 pub mod problem_1704_determine_if_string_halves_are_alike;
 pub mod problem_1768_merge_strings_alternately;
 pub mod problem_17_letter_combinations_of_a_phone_number;
+pub mod problem_1839_longest_substring_of_all_vowels_in_order;
 pub mod problem_18_four_sum;
 pub mod problem_19_remove_nth_node_from_end_of_linked_list;
 pub mod problem_1_two_sum;
