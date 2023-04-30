@@ -1,6 +1,7 @@
 pub struct UnionFind {
     parents: Vec<usize>,
     ranks: Vec<usize>,
+    total_components: usize,
 }
 
 impl UnionFind {
@@ -8,6 +9,7 @@ impl UnionFind {
         Self {
             parents: (0..n).collect(),
             ranks: vec![1; n],
+            total_components: n,
         }
     }
 
@@ -27,6 +29,8 @@ impl UnionFind {
             self.ranks[parent_b] += self.ranks[parent_a];
         }
 
+        self.total_components -= 1;
+
         true
     }
 
@@ -43,6 +47,10 @@ impl UnionFind {
 
     pub fn is_connected(&mut self, a: usize, b: usize) -> bool {
         self.find(a) == self.find(b)
+    }
+
+    pub fn is_graph_connected(&self) -> bool {
+        self.total_components == 1
     }
 }
 
@@ -139,5 +147,16 @@ mod tests {
         assert!(uf.is_connected(0, 1));
         assert!(uf.is_connected(1, 2));
         assert!(uf.is_connected(0, 2));
+    }
+
+    #[test]
+    fn test_is_graph_connected() {
+        let mut uf = UnionFind::new(3);
+
+        assert!(!uf.is_graph_connected());
+        uf.union(0, 1);
+        assert!(!uf.is_graph_connected());
+        uf.union(0, 2);
+        assert!(uf.is_graph_connected());
     }
 }
