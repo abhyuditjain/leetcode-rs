@@ -148,6 +148,7 @@ pub mod problem_88_merged_sorted_array;
 pub mod problem_897_profitable_schemes;
 pub mod problem_89_gray_code;
 pub mod problem_8_string_to_integer_atoi;
+pub mod problem_901_online_stock_span;
 pub mod problem_90_subsets_ii;
 pub mod problem_91_decode_ways;
 pub mod problem_92_reverse_linked_list_ii;
