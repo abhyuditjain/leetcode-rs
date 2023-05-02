@@ -161,5 +161,6 @@ pub mod problem_97_interleaving_strings;
 pub mod problem_985_sum_of_even_numbers_after_queries;
 pub mod problem_986_validate_stack_sequences;
 pub mod problem_98_validate_binary_search_tree;
+pub mod problem_994_rotting_oranges;
 pub mod problem_99_recover_binary_search_tree;
 pub mod problem_9_palindrome_number;
