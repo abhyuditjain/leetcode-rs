@@ -31,6 +31,7 @@ pub mod problem_1319_number_of_operations_to_make_network_connected;
 pub mod problem_13_roman_to_integer;
 pub mod problem_1402_reducing_dishes;
 pub mod problem_1444_number_of_ways_of_cutting_a_pizza;
+pub mod problem_1456_maximum_number_of_vowels_in_a_substring_of_given_length;
 pub mod problem_14_longest_common_prefix;
 pub mod problem_1579_remove_max_number_of_edges_to_keep_graph_fully_traversable;
 pub mod problem_15_three_sum;
