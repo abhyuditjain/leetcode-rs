@@ -33,6 +33,7 @@ pub mod problem_1402_reducing_dishes;
 pub mod problem_1444_number_of_ways_of_cutting_a_pizza;
 pub mod problem_1456_maximum_number_of_vowels_in_a_substring_of_given_length;
 pub mod problem_14_longest_common_prefix;
+pub mod problem_1557_minimum_number_of_vertices_to_reach_all_nodes;
 pub mod problem_1579_remove_max_number_of_edges_to_keep_graph_fully_traversable;
 pub mod problem_15_three_sum;
 pub mod problem_1639_number_of_ways_to_form_a_target_string_given_a_dictionary;
