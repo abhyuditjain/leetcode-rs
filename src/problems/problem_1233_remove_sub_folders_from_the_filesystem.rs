@@ -45,10 +45,7 @@ impl Trie {
         let mut curr = self;
 
         for folder in path.split('/').filter(|x| !x.is_empty()) {
-            curr = curr
-                .children
-                .entry(folder.to_string())
-                .or_insert(Trie::new());
+            curr = curr.children.entry(folder.to_string()).or_default();
         }
 
         curr.is_end = true;

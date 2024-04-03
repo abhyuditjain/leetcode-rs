@@ -128,8 +128,8 @@ fn find_next_job_index(jobs: &[Job], end_time: usize) -> usize {
 fn get_sorted_jobs(start_time: Vec<i32>, end_time: Vec<i32>, profit: Vec<i32>) -> Vec<Job> {
     let mut jobs = start_time
         .into_iter()
-        .zip(end_time.into_iter())
-        .zip(profit.into_iter())
+        .zip(end_time)
+        .zip(profit)
         .map(|((start_time, end_time), profit)| {
             (start_time as usize, end_time as usize, profit as usize)
         })

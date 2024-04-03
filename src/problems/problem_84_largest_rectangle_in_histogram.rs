@@ -55,8 +55,7 @@ pub fn area_linear(heights: &[usize]) -> usize {
         stack.push((start, h));
     }
 
-    while !stack.is_empty() {
-        let (idx, height) = stack.pop().unwrap();
+    while let Some((idx, height)) = stack.pop() {
         let area = height * (heights.len() - idx);
 
         max_area = max_area.max(area);

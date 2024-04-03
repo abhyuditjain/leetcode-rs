@@ -33,7 +33,7 @@
 //! 1 <= nums.length <= 100
 //! 0 <= nums[i] <= 100
 
-pub fn make_next_permutation(nums: &mut Vec<i32>) {
+pub fn make_next_permutation(nums: &mut [i32]) {
     if nums.is_empty() {
         return;
     }
@@ -50,7 +50,7 @@ pub fn make_next_permutation(nums: &mut Vec<i32>) {
     }
 }
 
-fn get_index_of_decreasing_pair_from_end(nums: &Vec<i32>) -> Option<usize> {
+fn get_index_of_decreasing_pair_from_end(nums: &[i32]) -> Option<usize> {
     if nums.len() < 2 {
         return None;
     }
@@ -58,13 +58,13 @@ fn get_index_of_decreasing_pair_from_end(nums: &Vec<i32>) -> Option<usize> {
 }
 
 fn get_index_of_next_greater_element_from_end_than_element_at(
-    nums: &Vec<i32>,
+    nums: &[i32],
     start: usize,
 ) -> Option<usize> {
     (start..nums.len()).rev().find(|&i| nums[i] > nums[start])
 }
 
-fn reverse_from(nums: &mut Vec<i32>, start: usize) {
+fn reverse_from(nums: &mut [i32], start: usize) {
     let mut i = start;
     let mut j = nums.len() - 1;
 
@@ -105,35 +105,29 @@ mod tests {
 
     #[test]
     fn test_get_index_of_decreasing_pair_from_end_1() {
-        assert_eq!(
-            get_index_of_decreasing_pair_from_end(&vec![1, 2, 3]),
-            Some(2)
-        );
-        assert_eq!(get_index_of_decreasing_pair_from_end(&vec![3, 2, 1]), None);
-        assert_eq!(
-            get_index_of_decreasing_pair_from_end(&vec![1, 1, 5]),
-            Some(2)
-        );
+        assert_eq!(get_index_of_decreasing_pair_from_end(&[1, 2, 3]), Some(2));
+        assert_eq!(get_index_of_decreasing_pair_from_end(&[3, 2, 1]), None);
+        assert_eq!(get_index_of_decreasing_pair_from_end(&[1, 1, 5]), Some(2));
     }
 
     #[test]
     fn test_get_index_of_next_greater_element_from_end_than_element_at_1() {
         assert_eq!(
-            get_index_of_next_greater_element_from_end_than_element_at(&vec![1, 2, 3], 0),
+            get_index_of_next_greater_element_from_end_than_element_at(&[1, 2, 3], 0),
             Some(2)
         );
 
         assert_eq!(
-            get_index_of_next_greater_element_from_end_than_element_at(&vec![1, 2, 3], 1),
+            get_index_of_next_greater_element_from_end_than_element_at(&[1, 2, 3], 1),
             Some(2)
         );
 
         assert_eq!(
-            get_index_of_next_greater_element_from_end_than_element_at(&vec![3, 2, 1], 0),
+            get_index_of_next_greater_element_from_end_than_element_at(&[3, 2, 1], 0),
             None,
         );
         assert_eq!(
-            get_index_of_next_greater_element_from_end_than_element_at(&vec![1, 1, 5], 0),
+            get_index_of_next_greater_element_from_end_than_element_at(&[1, 1, 5], 0),
             Some(2)
         );
     }

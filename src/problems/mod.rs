@@ -43,6 +43,7 @@ pub mod problem_1697_checking_existence_of_edge_length_limited_paths;
 pub mod problem_16_three_sum_closest;
 pub mod problem_1704_determine_if_string_halves_are_alike;
 pub mod problem_1768_merge_strings_alternately;
+pub mod problem_179_largest_number;
 pub mod problem_17_letter_combinations_of_a_phone_number;
 pub mod problem_1839_longest_substring_of_all_vowels_in_order;
 pub mod problem_18_four_sum;

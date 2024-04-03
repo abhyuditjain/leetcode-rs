@@ -32,13 +32,13 @@ pub fn recover_tree(root: &mut Node) {
 
     let mut previous = Node::None;
 
-    let mut curr = root.as_ref().map(Rc::clone);
+    let mut curr = root.clone();
     let mut stack = vec![];
 
     while curr.is_some() || !stack.is_empty() {
         if let Some(node) = curr {
             stack.push(node.clone());
-            curr = node.borrow().left.as_ref().map(Rc::clone);
+            curr = node.borrow().left.clone();
         } else if let Some(node) = &stack.pop() {
             let node_val = node.borrow().val;
 
@@ -57,7 +57,7 @@ pub fn recover_tree(root: &mut Node) {
             }
 
             previous = Some(Rc::clone(node));
-            curr = node.borrow().right.as_ref().map(Rc::clone);
+            curr = node.borrow().right.clone();
         }
     }
 

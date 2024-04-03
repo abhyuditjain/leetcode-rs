@@ -40,7 +40,7 @@ use crate::utils::listnode::ListNode;
 
 impl PartialOrd for ListNode {
     fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
-        other.val.partial_cmp(&self.val)
+        Some(self.cmp(other))
     }
 }
 
